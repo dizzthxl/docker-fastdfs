@@ -24,5 +24,8 @@ TRACKER_SERVER GROUP_NAME PORT   会写入fastdfs的配置文件
 -v /var/fdfs/storage2:/var/fdfs  将存储目录挂载出来
 最后参数storage  会启用不同配置是tracker还是storage
 
+增加了http_image_filter_module  自动缩放图片格式为[abc.jpg   =>   abc,100x100.jpg]
+
+
 测试
 fdfs_test /opt/fastdfs/conf/client.conf upload /tmp/12.jpg
