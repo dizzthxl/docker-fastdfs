@@ -30,7 +30,7 @@ if [ -n "$TRACKER_SERVER" ] ; then
 		tracker_server_str=${tracker_server_str}"tracker_server"=${element}"\\n"
 	done
 	echo $tracker_server_str
-	sed -i "s|tracker_server=.*$|${tracker_server_str}|g" /etc/fdfs/*
+	sed -i "s|tracker_server=0.0.0.0:0000$|${tracker_server_str}|g" /etc/fdfs/*
 fi
 
 #group1		group2	分组
